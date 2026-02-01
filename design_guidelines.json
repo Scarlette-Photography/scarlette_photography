@@ -1,0 +1,100 @@
+{
+  "identity": {
+    "name": "Scarlette Photography",
+    "persona": "The Romantic Rebel",
+    "vibe": "Modern, Bold, Whimsical, Edgy, Authentic",
+    "principles": [
+      "Anti-Generic: No standard 'wedding' layouts.",
+      "Bold Typography: Text is an image. Use it big.",
+      "Color Blocking: Immersive sections over white space.",
+      "Motion: Parallax and smooth scroll (Lenis) are mandatory."
+    ]
+  },
+  "typography": {
+    "primary_font": "Syne",
+    "secondary_font": "Manrope",
+    "installation": "import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Manrope:wght@300;400;600&display=swap');",
+    "usage": {
+      "h1": "font-['Syne'] font-extrabold text-6xl md:text-8xl uppercase tracking-tighter leading-[0.9]",
+      "h2": "font-['Syne'] font-bold text-4xl md:text-6xl tracking-tight",
+      "h3": "font-['Syne'] font-bold text-2xl md:text-3xl",
+      "body": "font-['Manrope'] text-base md:text-lg leading-relaxed tracking-wide",
+      "accent": "font-['Syne'] font-medium text-sm uppercase tracking-[0.2em]"
+    }
+  },
+  "colors": {
+    "palette": {
+      "burgundy": "#4A0404",
+      "forest": "#1A3C34",
+      "terracotta": "#C66B54",
+      "pastelGreen": "#E8F3E8",
+      "bone": "#F9F7F2",
+      "charcoal": "#1A1A1A"
+    },
+    "strategies": {
+      "hero_section": "bg-burgundy text-pastelGreen",
+      "services_section": "bg-bone text-forest",
+      "guide_section": "bg-forest text-terracotta",
+      "footer": "bg-charcoal text-bone",
+      "accents": "Use Terracotta for CTAs and highlights."
+    }
+  },
+  "layout_strategies": {
+    "grid_system": "The 'Tetris' Grid (Mode A). Avoid equal columns. Use col-span-4 vs col-span-8.",
+    "spacing": "Aggressive. Use py-24 or py-32 for section gaps.",
+    "containers": "Max-width-screen-2xl for full impact, but keep text readable in max-w-3xl blocks."
+  },
+  "components": {
+    "Hero": {
+      "structure": "Full-screen height (h-screen). Background image with heavy overlay or parallax. Massive centered text 'SCARLETTE'.",
+      "interaction": "Text reveals on load. Scroll-triggered parallax on image."
+    },
+    "LanguageSwitcher": {
+      "structure": "Fixed floating pill at bottom-right or integrated in Nav. Minimalist text 'EN / FR'.",
+      "style": "backdrop-blur-md bg-white/10 border border-white/20 rounded-full px-4 py-2 text-xs font-bold uppercase hover:bg-white/20 transition-all"
+    },
+    "Services": {
+      "structure": "Sticky Horizontal Scroll or Massive Accordion. Do not use 4 cards in a row.",
+      "style": "Each service gets a full viewport height or a large horizontal panel."
+    },
+    "Gallery": {
+      "structure": "Masonry layout. Mix portrait and landscape. Some images overlap.",
+      "hover": "Images scale down slightly (95%) and reveal title on hover."
+    },
+    "Contact": {
+      "structure": "Split screen. Left: Massive 'Let's Create'. Right: Minimalist form.",
+      "form_style": "Transparent inputs with bottom border only. No boxes."
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://images.unsplash.com/photo-1765915481912-edff5fea6c62?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwxfHx3aGltc2ljYWwlMjBmYXNoaW9uJTIwcG9ydHJhaXQlMjB3b21hbiUyMGZvcmVzdCUyMG5hdHVyZXxlbnwwfHx8fDE3NjkwMDg3NTJ8MA&ixlib=rb-4.1.0&q=85",
+      "couple_running": "https://images.unsplash.com/photo-1637782148212-d4be0f1f67f0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwxfHxjYW5kaWQlMjBhZHZlbnR1cm91cyUyMGNvdXBsZSUyMHBob3RvZ3JhcGh5JTIwcnVubmluZyUyMGxhdWdoaW5nJTIwb3V0ZG9vcnN8ZW58MHx8fHwxNzY5MDA4NzQ4fDA&ixlib=rb-4.1.0&q=85",
+      "couple_bridge": "https://images.unsplash.com/photo-1637782148244-21ac27bc1b91?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwyfHxjYW5kaWQlMjBhZHZlbnR1cm91cyUyMGNvdXBsZSUyMHBob3RvZ3JhcGh5JTIwcnVubmluZyUyMGxhdWdoaW5nJTIwb3V0ZG9vcnN8ZW58MHx8fHwxNzY5MDA4NzQ4fDA&ixlib=rb-4.1.0&q=85",
+      "friends_mountain": "https://images.unsplash.com/photo-1761472084994-61d80b8f4053?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHw0fHxjYW5kaWQlMjBhZHZlbnR1cm91cyUyMGNvdXBsZSUyMHBob3RvZ3JhcGh5JTIwcnVubmluZyUyMGxhdWdoaW5nJTIwb3V0ZG9vcnN8ZW58MHx8fHwxNzY5MDA4NzQ4fDA&ixlib=rb-4.1.0&q=85",
+      "woman_forest": "https://images.unsplash.com/photo-1707392573565-f1831cfc5099?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODl8MHwxfHNlYXJjaHwyfHx3aGltc2ljYWwlMjBmYXNoaW9uJTIwcG9ydHJhaXQlMjB3b21hbiUyMGZvcmVzdCUyMG5hdHVyZXxlbnwwfHx8fDE3NjkwMDg3NTJ8MA&ixlib=rb-4.1.0&q=85",
+      "castle_garden": "https://images.pexels.com/photos/27184190/pexels-photo-27184190.jpeg"
+    }
+  },
+  "motion": {
+    "library": "framer-motion",
+    "guidelines": [
+      "Use staggered entrance for text lines.",
+      "Images should have a slow zoom-out effect (scale 1.1 -> 1.0) on scroll.",
+      "Buttons should have a magnetic effect if possible."
+    ]
+  },
+  "universal_guidelines": [
+    "Do not use gradients. Use solid, bold colors.",
+    "Avoid 'Card' components with shadows. Use flat layouts with borders or just spacing.",
+    "Ensure text contrast is high (WCAG AA).",
+    "Use 'data-testid' for all interactive elements."
+  ],
+  "instructions_to_main_agent": [
+    "1. Update tailwind.config.js with the new fonts (Syne, Manrope) and colors.",
+    "2. Install 'framer-motion' and 'lucide-react' if missing.",
+    "3. Create a 'LanguageContext' to manage EN/FR state globally.",
+    "4. Build the 'Hero' section first to establish the vibe.",
+    "5. Use the provided image URLs. Do not use placeholders."
+  ]
+}
